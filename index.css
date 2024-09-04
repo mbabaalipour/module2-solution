@@ -1,0 +1,90 @@
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.child {
+    width: 400px;
+    height: 200px;
+    background: darkgray;
+    margin: 50px;
+    float: left;
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: left;
+}
+h1{
+    padding-left: 50%;
+}
+p{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.h4{
+    width: 80px;
+    height: 30px;
+    float: right;
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 18px;
+    margin-top: 0px;
+    color: black;
+    font-weight: bold;
+    border: 1.5px solid black;
+    background-color: rgb(251, 163, 178);
+    /* padding-bottom: 10px; */
+}
+.h5{
+    width: 80px;
+    height: 30px;
+    float: right;
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 35px;
+    margin-top: 0px;
+    font-weight: bold;
+    color: white;
+    border: 1.5px solid black;
+    background-color: rgb(155, 63, 63);
+    /* padding-bottom: 10px; */
+}
+.h6{
+    width: 80px;
+    height: 30px;
+    float: right;
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 35px;
+    margin-top: 0px;
+    font-weight: bold;
+    color: black;
+    border: 1.5px solid black;
+    background-color: rgb(240, 252, 135);
+    /* padding-bottom: 10px; */
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .section {
+        width: calc(33.33% - 20px); /* 3 equal sections with margin */
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: calc(50% - 20px); /* Two sections side by side */
+    }
+    
+    #sushi {
+        width: 100%; /* Third section takes full width */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .section {
+        width: 100%; /* Each section takes full width */
+        float: left;
+    }
+}
